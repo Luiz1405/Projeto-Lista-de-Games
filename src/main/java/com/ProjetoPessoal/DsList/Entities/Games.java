@@ -102,19 +102,19 @@ public class Games {
         this.imgUrl = imgUrl;
     }
 
-    public String getPequenaDescricao() {
+    public String getPequena_Descricao() {
         return pequena_descricao;
     }
 
-    public void setPequenaDescricao(String pequenaDescricao) {
+    public void setPequena_Descricao(String pequenaDescricao) {
         this.pequena_descricao = pequenaDescricao;
     }
 
-    public String getlongaDescricao() {
+    public String getlonga_Descricao() {
         return longa_descricao;
     }
 
-    public void setlongaDescricao(String longaDescricao) {
+    public void setlonga_Descricao(String longaDescricao) {
         this.longa_descricao = longaDescricao;
     }
 

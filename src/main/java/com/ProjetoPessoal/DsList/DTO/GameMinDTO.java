@@ -19,7 +19,7 @@ public class GameMinDTO {
         titulo = entity.getTitulo();
         ano = entity.getAno();
         imgUrl = entity.getImgUrl();
-        pequena_descricao = entity.getPequenaDescricao();
+        pequena_descricao = entity.getPequena_Descricao();
     }
 
     public Long getId() {
