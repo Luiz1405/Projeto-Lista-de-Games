@@ -15,8 +15,7 @@ public class Games {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String titulo;
-    
-    @Column(name = "game_ano")
+    @Column(name = "ano_lancamento")
     private String ano;
     private String genero;
     private String plataforma;
@@ -30,8 +29,9 @@ public class Games {
 
     }
 
-    public Games(Long id, String titulo, String genero, String plataforma, double nota, String imgUrl, String pequenaDescricao, String longaDescricao){
+    public Games(Long id, String titulo, String genero, String ano, String plataforma, double nota, String imgUrl, String pequenaDescricao, String longaDescricao){
         this.titulo = titulo;
+        this.ano = ano;
         this.genero = genero;
         this.plataforma = plataforma;
         this.nota = nota;
@@ -54,6 +54,14 @@ public class Games {
 
     public void setTitulo(String titulo) {
         this.titulo = titulo;
+    }
+
+    public String getAno() {
+        return ano;
+    } 
+
+    public void setAno(String ano) {
+        this.ano = ano;
     }
 
     public String getGenero() {
