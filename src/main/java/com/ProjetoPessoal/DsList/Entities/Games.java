@@ -21,23 +21,27 @@ public class Games {
     private String plataforma;
     private double nota;
     private String imgUrl;
-    private String pequenaDescricao;
-    private String longaDescricao;
+
+    @Column(columnDefinition = "TEXT")
+    private String pequena_descricao;
+
+    @Column(columnDefinition = "TEXT")
+    private String longa_descricao;
 
 
     public Games(){
 
     }
 
-    public Games(Long id, String titulo, String genero, String ano, String plataforma, double nota, String imgUrl, String pequenaDescricao, String longaDescricao){
+    public Games(Long id, String titulo, String genero, String ano, String plataforma, double nota, String imgUrl, String pequena_descricao, String longa_descricao){
         this.titulo = titulo;
         this.ano = ano;
         this.genero = genero;
         this.plataforma = plataforma;
         this.nota = nota;
         this.imgUrl = imgUrl;
-        this.pequenaDescricao = pequenaDescricao;
-        this.longaDescricao = longaDescricao;
+        this.pequena_descricao = pequena_descricao;
+        this.longa_descricao = longa_descricao;
     }
 
     public Long getId(){
@@ -97,19 +101,19 @@ public class Games {
     }
 
     public String getPequenaDescricao() {
-        return pequenaDescricao;
+        return pequena_descricao;
     }
 
     public void setPequenaDescricao(String pequenaDescricao) {
-        this.pequenaDescricao = pequenaDescricao;
+        this.pequena_descricao = pequenaDescricao;
     }
 
-    public String getLongaDescricao() {
-        return longaDescricao;
+    public String getlongaDescricao() {
+        return longa_descricao;
     }
 
-    public void setLongaDescricao(String longaDescricao) {
-        this.longaDescricao = longaDescricao;
+    public void setlongaDescricao(String longaDescricao) {
+        this.longa_descricao = longaDescricao;
     }
 
     @Override
