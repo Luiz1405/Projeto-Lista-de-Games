@@ -18,7 +18,7 @@ public class Games {
     private Long id;
     private String titulo;
     @Column(name = "ano_lancamento")
-    private String ano;
+    private Integer ano;
     private String genero;
     private String plataforma;
     private double nota;
@@ -35,7 +35,7 @@ public class Games {
 
     }
 
-    public Games(Long id, String titulo, String genero, String ano, String plataforma, double nota, String imgUrl, String pequena_descricao, String longa_descricao){
+    public Games(Long id, String titulo, String genero, Integer ano, String plataforma, double nota, String imgUrl, String pequena_descricao, String longa_descricao){
         this.titulo = titulo;
         this.ano = ano;
         this.genero = genero;
@@ -62,11 +62,11 @@ public class Games {
         this.titulo = titulo;
     }
 
-    public String getAno() {
+    public Integer getAno() {
         return ano;
     } 
 
-    public void setAno(String ano) {
+    public void setAno(Integer ano) {
         this.ano = ano;
     }
 

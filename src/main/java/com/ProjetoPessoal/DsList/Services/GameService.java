@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import com.ProjetoPessoal.DsList.DTO.GameDTO;
 import com.ProjetoPessoal.DsList.DTO.GameMinDTO;
 import com.ProjetoPessoal.DsList.Entities.Games;
+import com.ProjetoPessoal.DsList.Projections.GameMinProjections;
 import com.ProjetoPessoal.DsList.Repositories.GameRepository;
 
 @Service
@@ -25,11 +26,15 @@ public class GameService {
         
     }
 
-    
-    
-    @GetMapping
+    @Transactional(readOnly = true)
     public List<GameMinDTO> findAll(){
         List<Games> result = gameRepository.findAll();
+        return result.stream().map(x -> new GameMinDTO(x)).toList();
+    }
+    
+    @Transactional(readOnly = true)
+    public List<GameMinDTO> findByList(Long listId){
+        List<GameMinProjections> result = gameRepository.searchGameList(listId);
         return result.stream().map(x -> new GameMinDTO(x)).toList();
     }
 }
