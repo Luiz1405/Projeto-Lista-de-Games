@@ -9,7 +9,7 @@ public class GameDTO {
 
     private Long id;
     private String titulo;
-    private int ano;
+    private Integer ano;
     private String genero;
     private String plataforma;
     private double nota;
@@ -51,11 +51,11 @@ public class GameDTO {
         this.titulo = titulo;
     }
 
-    public int getAno() {
+    public Integer getAno() {
         return ano;
     }
 
-    public void setAno(int ano) {
+    public void setAno(Integer ano) {
         this.ano = ano;
     }
 

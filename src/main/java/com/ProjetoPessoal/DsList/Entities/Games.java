@@ -17,7 +17,6 @@ public class Games {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String titulo;
-    @Column(name = "ano_lancamento")
     private Integer ano;
     private String genero;
     private String plataforma;

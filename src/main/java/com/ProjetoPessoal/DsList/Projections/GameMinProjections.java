@@ -6,7 +6,7 @@ public interface GameMinProjections {
     Integer getAno();
     String getImgUrl();
     String getPequena_descricao();
-    String getlonga_descricao();
+    Integer getPosition();
 
     
 }
