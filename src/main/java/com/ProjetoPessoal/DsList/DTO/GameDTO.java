@@ -1,6 +1,5 @@
 package com.ProjetoPessoal.DsList.DTO;
 
-import org.springframework.beans.BeanUtils;
 
 import com.ProjetoPessoal.DsList.Entities.Games;
 
@@ -23,7 +22,7 @@ public class GameDTO {
     }
 
     public GameDTO(Games entity){
-        //BeanUtils.copyProperties(entity, this);
+
     this.id = entity.getId();
     this.titulo = entity.getTitulo();
     this.ano = entity.getAno();
@@ -33,6 +32,7 @@ public class GameDTO {
     this.imgUrl = entity.getImgUrl();
     this.pequena_descricao = entity.getPequena_Descricao();
     this.longa_descricao = entity.getlonga_Descricao();
+    
     }
 
     public Long getId() {

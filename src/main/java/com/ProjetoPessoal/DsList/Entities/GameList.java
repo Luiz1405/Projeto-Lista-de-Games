@@ -1,9 +1,6 @@
 package com.ProjetoPessoal.DsList.Entities;
 
 import java.util.Objects;
-
-import com.ProjetoPessoal.DsList.DTO.GameMinDTO;
-
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
