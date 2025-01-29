@@ -12,7 +12,7 @@ Para o banco de dados utilizei o H2 para os perfis de desenvolvimento e teste, e
 - **DTO(Data Tranfer Object) Define classes para Transferência de dados entre API e o cliente.
 - **Entities - Representa as tabelas do banco de dados e seus relacionamentos.
 
-🚀 ##Tecnologias Utilizadas
+🚀 ## Tecnologias Utilizadas
 
 - **Java 21** com **Spring Boot**
 - **Spring Data JPA** (ORM)
@@ -21,7 +21,7 @@ Para o banco de dados utilizei o H2 para os perfis de desenvolvimento e teste, e
 - **Projections** para consultas otimizadas
 - **CORS** configurado para segurança
 
-🔥 ##Funcionalidades Implementadas
+🔥 ## Funcionalidades Implementadas
 
 ✅Desenvolvimento de uma API RESful para gerenciamento de jogos.
 ✅Funcionalidade para reordenar a posição dos jogos em uma lista
