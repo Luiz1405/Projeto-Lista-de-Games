@@ -30,9 +30,13 @@ Para o banco de dados utilizei o H2 para os perfis de desenvolvimento e teste, e
 ## 🔥 Funcionalidades Implementadas
 
 ✅ Desenvolvimento de uma API RESful para gerenciamento de jogos.
+
 ✅ Funcionalidade para reordenar a posição dos jogos em uma lista
+
 ✅ Integração com banco de dados PostgreSQL utilizando Docker
+
 ✅ Implementação de validações de dados
+
 ✅ Utilização de funções avançadas do Spring Boot
 
 ---
